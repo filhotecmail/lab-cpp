@@ -124,14 +124,14 @@ void AddListener(MyEvent listener) {
 }
 ```
 
-void AddListener(MyEvent listener) --> Esta é a assinatura de uma função chamada AddListener, que recebe um parâmetro chamado listener do tipo MyEvent. A função não possui valor de retorno (void indica que não retorna nada).
+```void AddListener(MyEvent listener)``` --> Esta é a assinatura de uma função chamada AddListener, que recebe um parâmetro chamado listener do tipo MyEvent. A função não possui valor de retorno (void indica que não retorna nada).
 Esse método pede um parametro do tipo ````MyEvent``` , por que ?, Ele precisa adicionar ao vetor de Escutadores quem se inscreve na lista de escutadores, então quem Herdar de um MyEvent , será adicionado ao vetor, isso nos possibilitará , depois percorrer o vetor.
 
-MyEvent listener: --> MyEvent é um tipo definido previamente como um ponteiro para uma função que recebe um argumento const std::string& (uma referência constante para uma string) e não retorna nada (void). Esse tipo representa a assinatura de uma função que pode ser usada como um observador de eventos.
+```MyEvent listener``` --> MyEvent é um tipo definido previamente como um ponteiro para uma função que recebe um argumento const std::string& (uma referência constante para uma string) e não retorna nada (void). Esse tipo representa a assinatura de uma função que pode ser usada como um observador de eventos.
 
-listeners.push_back(listener): Aqui, listeners é um vetor que armazena funções observadoras (MyEvent). A função push_back é um método do vetor que insere o valor passado como argumento no final do vetor. Neste caso, ela insere a função listener no final da lista de observadores.
+```listeners.push_back(listener)``` --> Aqui, listeners é um vetor que armazena funções observadoras (MyEvent). A função push_back é um método do vetor que insere o valor passado como argumento no final do vetor. Neste caso, ela insere a função listener no final da lista de observadores.
 
-A função TriggerEvent percorre essa lista de observadores e invoca cada um deles, passando a eles uma mensagem.
+A função ```TriggerEvent``` percorre essa lista de observadores e invoca cada um deles, passando a eles uma mensagem.
 
 ```c++
 
