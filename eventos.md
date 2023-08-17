@@ -125,7 +125,8 @@ void AddListener(MyEvent listener) {
 ```
 
 ```void AddListener(MyEvent listener)``` --> Esta é a assinatura de uma função chamada AddListener, que recebe um parâmetro chamado listener do tipo MyEvent. A função não possui valor de retorno (void indica que não retorna nada).
-Esse método pede um parametro do tipo ````MyEvent``` , por que ?, Ele precisa adicionar ao vetor de Escutadores quem se inscreve na lista de escutadores, então quem Herdar de um MyEvent , será adicionado ao vetor, isso nos possibilitará , depois percorrer o vetor.
+
+Esse método pede um parametro do tipo ```MyEvent``` , por que ?, Ele precisa adicionar ao vetor de Escutadores quem se inscreve na lista de escutadores, então quem Herdar de um MyEvent , será adicionado ao vetor, isso nos possibilitará , depois percorrer o vetor.
 
 ```MyEvent listener``` --> MyEvent é um tipo definido previamente como um ponteiro para uma função que recebe um argumento const std::string& (uma referência constante para uma string) e não retorna nada (void). Esse tipo representa a assinatura de uma função que pode ser usada como um observador de eventos.
 
@@ -143,7 +144,7 @@ void TriggerEvent(const std::string& message) {
 
 ```
 Ela dispara um evento para todos os ouvintes (listeners) adicionais ao vector.
-``` auto& listener ``` cria uma referência constante para cada elemento da coleção listeners à medida que o loop itera.
+```auto& listener ``` cria uma referência constante para cada elemento da coleção listeners à medida que o loop itera.
 
 ```auto ``` --> O uso de auto é uma característica do C++ chamada "inferência de tipo". Isso significa que o compilador deduz automaticamente o tipo de dados com base na expressão à qual é atribuído. No caso do loop, o tipo de dados é deduzido do tipo dos elementos na coleção listeners.
 
