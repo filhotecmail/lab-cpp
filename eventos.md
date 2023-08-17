@@ -106,7 +106,7 @@ Começa importando as bibliotecas necessárias, incluindo a "iostream" para saí
 A seguir, é definida a classe ```EventPublisher```. Essa classe é responsável por gerenciar os observadores e notificar quando ocorrer um evento. Ela possui uma função AddListener que permite adicionar observadores (representados por funções) a uma lista interna chamada listeners. 
 
 
-using MyEvent = void (*)(const std::string&); ```
+```using MyEvent = void (*)(const std::string&); ```
 
 ```using``` é uma construção da linguagem C++ que permite criar um alias (um novo nome) para um tipo existente, permitindo que você use um nome mais descritivo para um tipo complexo ou longo de uma forma que seja mais simples referencia-lo.
 
