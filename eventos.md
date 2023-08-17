@@ -152,7 +152,10 @@ Ela dispara um evento para todos os ouvintes (listeners) adicionais ao vector.
 
 ```const``` -> A palavra-chave const indica que a referência criada é constante, ou seja, não pode ser usada para modificar o valor do elemento original na coleção.
 
-
+### Declaração Antecipada (Forward Declaration)
+No início do código, você declara a classe usando class NomeDaClasse;. Isso informa ao compilador que existe uma classe com esse nome, mas ainda não fornece os detalhes completos de sua implementação.
+Pode-se usar essa declaração antecipada para criar ponteiros e referências para objetos dessa classe, bem como declarar funções que recebem ou retornam objetos dessa classe, mais tarde, você fornece a implementação real da classe.
+A principal razão para usar essa técnica é evitar a necessidade de incluir os detalhes completos da classe em todos os lugares em que você a usa. Isso pode ajudar a reduzir as dependências entre arquivos de cabeçalho e, portanto, acelerar os tempos de compilação
 
 
 
